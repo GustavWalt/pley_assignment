@@ -25,19 +25,24 @@ function App() {
   return (
     <div className="flex flex-col text-center">
       <header className="mt-10">
-        <h1 className="text-3xl">Pley Home Assignment</h1>
+        <h1 className="text-3xl font-bold text-gray-700">
+          Pley Home Assignment
+        </h1>
         <h2 className="italic">Gustav Walter</h2>
       </header>
       <main className="mt-10">
         <form onSubmit={handleSubmit}>
           <div className="search">
             <input
-              className="border-solid border-2 "
+              className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="Enter username"
               onChange={(e) => setQuery(e.target.value)}
             />
-            <button type="submit" className="border-solid border-2">
+            <button
+              type="submit"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded focus:outline-none focus:shadow-outline ml-2"
+            >
               Search Github
             </button>
           </div>
